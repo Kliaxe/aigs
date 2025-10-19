@@ -1,4 +1,4 @@
-task: "qd"
+task: "mcts"
 
 qd:
   n: 10
@@ -14,8 +14,8 @@ qd:
 mcts:
   game: "tic_tac_toe"
   maxim: "human"
-  minim: "random"
-  compute: 10
+  minim: "monte_carlo"
+  compute: 1000
   c: 0.9
   blahbalh: "sss"
 
