@@ -1,23 +1,31 @@
-task: "mcts"
+task: "qd"
 
 qd:
-  n: 10
-  p: 0.1
+  exercise: "content_generation" # "evolutionary_algorithm" or "content_generation"
   sigma: 0.01
   generation: 10 # how many generations do we run?
   proportion: 0.2 # top we keep?
-  dimensions: 2000
+  dimensions: 2
   population: 100
+  algorithm: "ES" # choose between "GA" and "ES"
   rep: "turtle"
   game: "smb"
+  n: 10
+  map_budget: 500
+  map_init_fraction: 0.2
+  map_mutation_rate: 0.05
+  jumps_bins: 15
+  jumps_max: 3
+  enemies_bins: 15
+  enemies_max: 10
+  empty_bins: 15
+  empty_max: 200 # air tiles
 
 mcts:
   game: "tic_tac_toe"
   maxim: "human"
   minim: "monte_carlo"
   compute: 1000
-  c: 0.9
-  blahbalh: "sss"
 
 ann:
   hidden: 30
